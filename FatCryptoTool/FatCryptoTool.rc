@@ -1,0 +1,326 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,0,2,1
+ PRODUCTVERSION 0,0,2,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "WinAES Executable"
+            VALUE "CompanyName", "FatLYZ"
+            VALUE "FileDescription", "WinAES"
+            VALUE "FileVersion", "0.0.2.1"
+            VALUE "InternalName", "WinAES"
+            VALUE "LegalCopyright", "(C) FatLYZ & HEVPhoto.com"
+            VALUE "OriginalFilename", "WinAES.exe"
+            VALUE "ProductName", "WinAES"
+            VALUE "ProductVersion", "0.0.2.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\FatCryptoTool.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Log Off.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FATCRYPTOTOOL_DIALOG DIALOGEX 0, 0, 503, 289
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_WINDOWEDGE | WS_EX_APPWINDOW
+CAPTION "WinAES x86 Ver: 0.2.1"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",_TAB_MAIN,"SysTabControl32",0x0,10,10,484,256
+    PUSHBUTTON      "E&xit",IDCANCEL,444,268,50,16
+    LTEXT           "WinAES Ver: 0.2.1 (32-bit)",IDC_STATIC,13,271,248,11
+END
+
+IDD_TAB_ABOUT DIALOGEX 0, 0, 476, 240
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "WinAES",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,57,27,104,10
+    CONTROL         "Version: 0.2.1 (32-bit),  Copyright (C) 2012 by FatLYZ && hevphoto.com, All rights reserved.",IDC_STATIC,
+                    "Static",SS_LEFTNOWORDWRAP | WS_GROUP,58,38,378,10
+    LTEXT           "WinAES is provided as freeware. You are granted the right to use and to make an unlimited number of copies of these software.",IDC_STATIC,58,68,321,17
+    LTEXT           "AES(Advanced Encryption Standard), one of the most secure block ciphers in the world.",IDC_STATIC,58,160,307,9
+    CONTROL         "Any suggestions, feedback and comments are welcome. ",IDC_STATIC,
+                    "Static",SS_LEFTNOWORDWRAP | WS_GROUP,58,117,188,10
+    LTEXT           "The AES functions in this software are based in part on the descriptions in FIPS-197 document.",IDC_STATIC,58,170,353,9
+    LTEXT           "The Camellia functions in this software are based in part on the descriptions in RFC 3713 document.",IDC_STATIC,58,180,353,9
+    CONTROL         "Email: fatlyz@hevphoto.com",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,58,127,188,10
+    CONTROL         "URL: http://hevphoto.com/winaes",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,58,137,188,10
+    LTEXT           "These software are provided ""as-is"".No warranty of any kind is expressed or implied.",IDC_STATIC,58,85,321,12
+    LTEXT           "The author will not be liable for data loss, damages, loss of profits or any other kind of loss while using or misusing this software.",IDC_STATIC,58,94,321,17
+    CONTROL         "Add to windows context menu",_CHK_CMENU,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,224,188,9
+END
+
+IDD_TAB_AES256 DIALOGEX 0, 0, 476, 240
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",_LST_FILES,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,11,16,452,155
+    CONTROL         "&Decrypt",_CHK_DEC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,205,50,9
+    CONTROL         "Secure erase &original files",_CHK_ERASE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,217,97,9
+    CONTROL         "AES256",_RAD_AES,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,170,204,41,10
+    CONTROL         "Camellia256",_RAD_CAM,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,218,204,55,10
+    EDITTEXT        _EDT_PASS,169,216,177,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Encrypt",_BTN_START,368,204,53,23
+    PUSHBUTTON      "&Stop",_BTN_STOP,423,204,33,23
+    LTEXT           "Drag files here or click ""Add Files..""",IDC_STATIC,11,5,132,9
+    RTEXT           "Password:",IDC_STATIC,125,218,39,9
+    GROUPBOX        "Options",IDC_STATIC,12,192,341,42
+    RTEXT           "Cipher Type:",IDC_STATIC,108,204,56,9
+    GROUPBOX        "Operations",IDC_STATIC,357,192,106,42
+    PUSHBUTTON      "&Add Files...",_BTN_ADD,11,173,63,16
+    PUSHBUTTON      "&Remove",_BTN_REMOVE,141,173,63,16
+    PUSHBUTTON      "&Clear",_BTN_CLR,206,173,63,16
+    PUSHBUTTON      "&Locate File...",_BTN_LOCATE,76,173,63,16
+END
+
+IDD_TAB_HASH DIALOGEX 0, 0, 476, 240
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Select hash functions and file:",IDC_STATIC,9,6,265,59
+    GROUPBOX        "Status",IDC_STATIC,278,6,187,59
+    GROUPBOX        "Results",IDC_STATIC,9,67,456,165
+    PUSHBUTTON      "&Open...",_BTN_OPEN_H,178,42,53,17
+    EDITTEXT        _EDIT_RESULTS_H,17,78,442,149,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
+    CONTROL         "",_PROG_H,"msctls_progress32",0x0,330,38,118,10
+    RTEXT           "Threads:",IDC_STATIC,291,26,34,10
+    RTEXT           "Process:",IDC_STATIC,289,39,36,10
+    LTEXT           "Ready",_ST_STATUS_H,331,26,113,10
+    PUSHBUTTON      "&Stop",_BTN_TERM_H,232,42,35,17,WS_DISABLED
+    CONTROL         "MD5",_CHK_MD5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,22,57,8
+    CONTROL         "SHA-1",_CHK_SHA1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,33,57,8
+    CONTROL         "SHA-2(SHA256)",_CHK_SHA256,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,44,65,8
+    CONTROL         "SHA-2(SHA512)",_CHK_SHA512,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,89,22,82,8
+    CONTROL         "Keccak(SHA-3 Finalist)",_CHK_KECCAK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,89,33,86,8
+    LTEXT           "Drag a file into this window or click ""Open...""",IDC_STATIC,179,20,86,17
+END
+
+IDD_TAB_TOOLS DIALOGEX 0, 0, 476, 240
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Random Password Generator",IDC_STATIC,8,5,234,90
+    LTEXT           "Password Length(1-9999):",IDC_STATIC,18,22,95,9
+    EDITTEXT        _EDT_LENGTH,114,21,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "&Generate",_BTN_GEN,158,21,50,14
+    EDITTEXT        _EDT_GPASS,79,39,155,46,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
+    CONTROL         "Upper Case",_CHK_UPC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,39,55,10
+    CONTROL         "Lower Case",_CHK_LWC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,51,56,10
+    CONTROL         "Numbers",_CHK_NUM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,63,56,10
+    CONTROL         "Symbols",_CHK_SYM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,75,56,10
+    GROUPBOX        "Secure File Eraser (USE CAREFULLY!)",IDC_STATIC,248,5,219,227
+    CONTROL         "",_LST_FILES,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,257,26,202,157
+    LTEXT           "Drag files here or click ""+""",IDC_STATIC,257,15,132,9
+    PUSHBUTTON      "E&rase",_BTN_START_SE,372,205,53,19
+    PUSHBUTTON      "&Stop",_BTN_STOP_SE,427,205,32,19
+    CONTROL         "Erase 1 time",_RAD_ETIMES_1,"Button",BS_AUTORADIOBUTTON,263,189,64,10
+    CONTROL         "Erase 7 times",_RAD_ETIMES_7,"Button",BS_AUTORADIOBUTTON,263,200,65,10
+    CONTROL         "Erase 35 times",_RAD_ETIMES_35,"Button",BS_AUTORADIOBUTTON,263,211,93,10
+    PUSHBUTTON      "-",_BTN_REMOVE_SE,400,185,24,16
+    PUSHBUTTON      "&Clear",_BTN_CLR_SE,427,185,32,16
+    PUSHBUTTON      "+",_BTN_ADD_SE,372,185,24,16
+    GROUPBOX        "Base64 Encode/Decode",IDC_STATIC,8,99,234,132
+    EDITTEXT        _EDT_B64_IN,19,121,215,84,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Input plain data or encoded text:",IDC_STATIC,18,110,141,9
+    PUSHBUTTON      "&Encode",_BTN_B64_ENC,146,208,44,17
+    PUSHBUTTON      "&Decode",_BTN_B64_DEC,192,208,44,17
+END
+
+IDD_PASSC DIALOGEX 0, 0, 254, 76
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        _EDIT_PASSC,41,30,178,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,143,55,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,197,55,50,14
+    LTEXT           "Confirm your password:",IDC_STATIC,17,15,89,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_FATCRYPTOTOOL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 496
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 282
+    END
+
+    IDD_TAB_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 469
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 233
+    END
+
+    IDD_TAB_AES256, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 468
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 233
+    END
+
+    IDD_TAB_HASH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 469
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 233
+    END
+
+    IDD_TAB_TOOLS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 469
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 233
+    END
+
+    IDD_PASSC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 247
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\FatCryptoTool.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
