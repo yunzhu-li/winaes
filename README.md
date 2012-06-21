@@ -3,7 +3,6 @@ WinAES
 
 
 #### A powerful cryptography toolbox.
-#### The contact information in code files is changed.
-#### Please contact fatlyz.pub@gmail.com or http://fatlyz.com
-#### 代码中注释的联系信息已经改变，请联系 fatlyz.pub@gmail.com 或 http://fatlyz.com
-  
+#### Contains 2 symmetric-key algorithms and 5 hash functions
+#### a password generator and more....
+#### 拥有两个对称分组算法和5个散列函数的密码学工具箱，密码生成器，还有更多功能...
