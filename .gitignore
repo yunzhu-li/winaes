@@ -12,3 +12,9 @@
 *.a
 
 .DS_Store
+
+WinAES.ncb
+
+WinAES.suo
+
+WinAES/WinAES.vcproj.FATLYZ-S2003-VM.fatlyz.user
