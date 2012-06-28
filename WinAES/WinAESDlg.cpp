@@ -63,7 +63,7 @@ BOOL CWinAESDlg::OnInitDialog()
 	this->_ctl_tab_main.InsertItem(0, _lpTabItem);
 	_lpTabItem->pszText = _T("Hash(MD5/SHA-1/SHA512..)");
 	this->_ctl_tab_main.InsertItem(1, _lpTabItem);
-	_lpTabItem->pszText = _T("Securtiy Tools");
+	_lpTabItem->pszText = _T("Security Tools");
 	this->_ctl_tab_main.InsertItem(2, _lpTabItem);
 	_lpTabItem->pszText = _T("About..");
 	this->_ctl_tab_main.InsertItem(3, _lpTabItem);

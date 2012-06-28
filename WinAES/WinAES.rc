@@ -139,7 +139,7 @@ STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     CONTROL         "WinAES",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,57,27,104,10
-    CONTROL         "Version: 0.2.2 (64-bit, build 120621),  Copyright (C) 2012 FatLYZ.COM, All rights reserved.",IDC_STATIC,
+    CONTROL         "Version: 0.2.2 (64-bit, build 120628),  Copyright (C) 2012 FatLYZ.COM, All rights reserved.",IDC_STATIC,
                     "Static",SS_LEFTNOWORDWRAP | WS_GROUP,58,38,378,10
     LTEXT           "WinAES is provided as freeware. You are granted the right to use and to make an unlimited number of copies of these software.",IDC_STATIC,58,68,321,17
     LTEXT           "AES(Advanced Encryption Standard), one of the most secure block ciphers in the world.",IDC_STATIC,58,160,307,9
@@ -159,17 +159,17 @@ STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     CONTROL         "",_LST_FILES,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,11,16,452,155
-    CONTROL         "&Decrypt",_CHK_DEC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,205,50,9
-    CONTROL         "Secure erase &original files",_CHK_ERASE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,217,97,9
-    CONTROL         "AES256",_RAD_AES,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,170,204,41,10
-    CONTROL         "Camellia256",_RAD_CAM,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,218,204,55,10
-    EDITTEXT        _EDT_PASS,169,216,177,12,ES_AUTOHSCROLL
+    CONTROL         "&Decrypt",_CHK_DEC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,205,75,9
+    CONTROL         "Securely erase &original files",_CHK_ERASE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,217,114,9
+    CONTROL         "AES256",_RAD_AES,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,183,204,41,10
+    CONTROL         "Camellia256",_RAD_CAM,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,231,204,55,10
+    EDITTEXT        _EDT_PASS,182,216,164,12,ES_AUTOHSCROLL
     PUSHBUTTON      "&Encrypt",_BTN_START,368,204,53,23
     PUSHBUTTON      "&Stop",_BTN_STOP,423,204,33,23
     LTEXT           "Drag files here or click ""Add Files..""",IDC_STATIC,11,5,132,9
-    RTEXT           "Password:",IDC_STATIC,125,218,39,9
+    RTEXT           "Password:",IDC_STATIC,136,218,42,9
     GROUPBOX        "Options",IDC_STATIC,12,192,341,42
-    RTEXT           "Cipher Type:",IDC_STATIC,108,204,56,9
+    RTEXT           "Cipher Type:",IDC_STATIC,122,204,56,9
     GROUPBOX        "Operations",IDC_STATIC,357,192,106,42
     PUSHBUTTON      "&Add Files...",_BTN_ADD,11,173,63,16
     PUSHBUTTON      "&Remove",_BTN_REMOVE,141,173,63,16
