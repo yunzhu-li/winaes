@@ -4,8 +4,8 @@
 //		WinAES
 //
 //		http://fatlyz.com
-//		fatlyz.pub@gmail.com
-//		(C)2012 FatLYZ
+//		contact@fatlyz.com
+//		(C) 2014 FatLYZ.COM
 //
 /////////////////////////////////////
 

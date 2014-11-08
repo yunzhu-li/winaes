@@ -4,8 +4,8 @@
 //		WinAES
 //
 //		http://fatlyz.com
-//		fatlyz.pub@gmail.com
-//		(C)2012 FatLYZ
+//		contact@fatlyz.com
+//		(C) 2014 FatLYZ.COM
 //
 /////////////////////////////////////
 
@@ -187,10 +187,10 @@ DWORD WINAPI _MDThdFunc(LPVOID _lParam)
 	//Keccak512
 	if(_TabHashDlg->_bKeccak512)
 	{
-		_TabHashDlg->_ctl_st_status_h.SetWindowText(_T("Calculating Keccak..."));
+		_TabHashDlg->_ctl_st_status_h.SetWindowText(_T("Calculating SHA-3 (Keccak-512)..."));
 		if(FileKeccak512(_TabHashDlg->_inFilePath, _hashKeccak512, _UpdateOpProcessH, _lParam))
 		{
-			_stprintf_s(_outputTextPart, 4096, _T("\r\n\r\nKeccak:\r\n"));
+			_stprintf_s(_outputTextPart, 4096, _T("\r\n\r\nSHA-3 (Keccak-512):\r\n"));
 			_tcscat_s(_outputText, 32768, _outputTextPart);
 			for(char _ix = 0; _ix < 64; _ix++)
 			{
@@ -198,10 +198,13 @@ DWORD WINAPI _MDThdFunc(LPVOID _lParam)
 				_tcscat_s(_outputText, 32768, _outputTextPart);
 			}
 		}else{
-			_stprintf_s(_outputTextPart, 4096, _T("\r\n\r\nKeccak:\r\nOpen File Failed"));
+			_stprintf_s(_outputTextPart, 4096, _T("\r\n\r\nSHA-3 (Keccak-512):\r\nOpen File Failed"));
 			_tcscat_s(_outputText, 32768, _outputTextPart);
 		}
 	}
+
+	// Append a new line
+	_tcscat_s(_outputText, 32768, _T("\n"));
 
 	_TabHashDlg->_ctl_prog_h.SetPos(0);
 

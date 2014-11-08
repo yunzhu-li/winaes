@@ -4,8 +4,8 @@
 //		WinAES
 //
 //		http://fatlyz.com
-//		fatlyz.pub@gmail.com
-//		(C)2012 FatLYZ
+//		contact@fatlyz.com
+//		(C) 2014 FatLYZ.COM
 //
 /////////////////////////////////////
 
@@ -208,7 +208,7 @@ void CWinAESDlg::OnDropFiles(HDROP hDropInfo)
 	}else
 	if(this->_m_lastTabIndex == 3)
 	{
-		this->MessageBox(_T("Thank you for using my program! Please visit http://weibo.com/fatlyz"), _T("Hi~"), MB_ICONINFORMATION);
+		this->MessageBox(_T("Thank you for using my program! Please visit http://fatlyz.com"), _T("Hi~"), MB_ICONINFORMATION);
 	}
 
 	free(_curFileLenStr);

@@ -4,8 +4,8 @@
 //		WinAES
 //
 //		http://fatlyz.com
-//		fatlyz.pub@gmail.com
-//		(C)2012 FatLYZ
+//		contact@fatlyz.com
+//		(C) 2014 FatLYZ.COM
 //
 /////////////////////////////////////
 
@@ -132,7 +132,7 @@ void CTabAboutDlg::OnBnClickedChkCmenu()
 			if (RegDeleteKey(_hKey, _T("Open with WinAES")) == ERROR_SUCCESS){
 				RegCloseKey(_hKey);
 				this->_ctl_chk_cmenu.SetCheck(0);
-				this->MessageBox(_T("Successfully deleted items from the windows context menu."), _T("Prompt"), MB_ICONINFORMATION);
+				this->MessageBox(_T("Successfully deleted item from the windows context menu."), _T("Prompt"), MB_ICONINFORMATION);
 				return;
 			}
 		}
@@ -140,7 +140,7 @@ void CTabAboutDlg::OnBnClickedChkCmenu()
 	}
 	//Failed
 	RegCloseKey(_hKey);
-	this->MessageBox(_T("Cannot access the windows registry, this operation need Administrator privilege."), _T("Prompt"), MB_ICONEXCLAMATION);
+	this->MessageBox(_T("Cannot access the windows registry, this operation needs administrator privilege."), _T("Prompt"), MB_ICONEXCLAMATION);
 	this->_ctl_chk_cmenu.SetCheck(!this->_ctl_chk_cmenu.GetCheck());
 	return;
 
