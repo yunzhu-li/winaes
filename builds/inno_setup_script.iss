@@ -34,7 +34,6 @@ Source: "vcredist_x64.exe"; DestDir: "{app}"; Flags: ignoreversion deleteafterin
 
 [Icons]
 Name: "{group}\WinAES"; Filename: "{app}\WinAES_0.2.4_x64.exe"
-Name: "{group}\{cm:ProgramOnTheWeb,WinAES}"; Filename: "https://winaes.com"
 Name: "{group}\{cm:UninstallProgram,WinAES}"; Filename: "{uninstallexe}"
 Name: "{commondesktop}\WinAES"; Filename: "{app}\WinAES_0.2.4_x64.exe"; Tasks: desktopicon
 
