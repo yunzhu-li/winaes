@@ -1,26 +1,24 @@
 
-/////////////////////////////////////
 //
-//		WinAES
+//  Copyright (c) 2016 Yunzhu Li.
+//  contact@yunzhu.li
 //
-//		http://fatlyz.com
-//		contact@fatlyz.com
-//		(C) 2014 FatLYZ.COM
+//  You can redistribute it and/or modify it under the terms 
+//  of the GNU General Public License version 3 as published
+//  by the Free Software Foundation.
 //
-/////////////////////////////////////
-
-//***************************************************************
-//***************************************************************
-//*  _fat_aes_cbc.cpp -- AES Operations on Files (Mode: CBC)   **
-//*  2012.01 fatlyz.                                           **
-//***************************************************************
-//***************************************************************
-
+//  This file is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty 
+//  of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See
+//  the GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public
+//  License along with this file.
+//  If not, see http://www.gnu.org/licenses/.
+//
 
 #include "_fat_aes_cbc.h"
-
 #include "io.h"
-
 
 void _AES_Encrypt_CBC(BYTE *_buf, UINT32 _iBlockCount, DWORD *_expanded_key, BYTE *_cbc_state)
 {
@@ -271,13 +269,4 @@ BOOL _File_AES_Decrypt_CBC(LPTSTR _filepath_in, LPTSTR _filepath_out, BYTE *_cip
 	free(_buf);
 
 	return 1;
-
-
 }
-
-
-
-
-
-
-

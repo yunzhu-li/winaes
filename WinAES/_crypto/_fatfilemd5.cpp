@@ -1,3 +1,22 @@
+
+//
+//  Copyright (c) 2016 Yunzhu Li.
+//  contact@yunzhu.li
+//
+//  You can redistribute it and/or modify it under the terms 
+//  of the GNU General Public License version 3 as published
+//  by the Free Software Foundation.
+//
+//  This file is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty 
+//  of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See
+//  the GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public
+//  License along with this file.
+//  If not, see http://www.gnu.org/licenses/.
+//
+
 //***************************************************************
 //***************************************************************
 //*  fatfilemd5.cpp -- Generates MD5 hash of a file or string  **
@@ -26,7 +45,6 @@ void FF(_uint32 * a, _uint32 b, _uint32 c, _uint32 d, _uint32 M,int s, _uint32 t
 void GG(_uint32 * a, _uint32 b, _uint32 c, _uint32 d, _uint32 M,int s, _uint32 t);
 void HH(_uint32 * a, _uint32 b, _uint32 c, _uint32 d, _uint32 M,int s, _uint32 t);
 void II(_uint32 * a, _uint32 b, _uint32 c, _uint32 d, _uint32 M,int s, _uint32 t);
-
 
 ///////
 BOOL FileMD5(TCHAR * _filepath, unsigned long *_hash, void(* _callback)(unsigned int _percent, void *_param), void *_callbackParam)
@@ -180,8 +198,6 @@ void StringMD5(char * _lpszStr, unsigned long *_hash)
 	return;
 }
 
-
-///////
 void _md5transform(_uint32 *_state, _uint32 * _block)
 {
 	//definitions
@@ -277,33 +293,15 @@ void _md5transform(_uint32 *_state, _uint32 * _block)
 	II(&b,c,d,a,M[ 9],21,0xEB86D391);
 
 	_state[0] += a; _state[1] += b; _state[2] += c; _state[3] += d;
+}
 
-}
-/*
-_uint32 genti(int i){
-	return (_uint32)(pow((double)2, (double)32) * abs(sin((double)i)));
-}
-*/
 _uint32 _fathtonl(_uint32 l_input){
 	return ((l_input & 0xff000000) >> 24) | ((l_input & 0x00ff0000) >> 8) |	((l_input & 0x0000ff00) << 8) | ((l_input & 0x000000ff) <<24);
 }
 
-
 _uint32 rShiftLeft(_uint32 lData,int n){
-	/*
-	_uint32 tmp=0,rSL=0;
-	tmp=iData;
-	tmp=tmp>>(32-(n));
-	rSL=iData<<n;
-	rSL=rSL+tmp;
-	//printf("iDta :%lx ,n:%d\n",iData,n);
-	//printf("rSL :%lx ,tmp:%lx\n",rSL,tmp);
-	//rSL= (iData) << (n) | (iData) >> (32-(n));
-	//printf("rSL1:%lx\n",rSL);	
-	*/
 	return (lData) << (n) | (lData) >> (32 - (n));
 }
-
 
 //4  nonlinearity operations.
 	_uint32 F(_uint32 X,_uint32 Y,_uint32 Z){

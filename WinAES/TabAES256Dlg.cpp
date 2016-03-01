@@ -1,13 +1,21 @@
 
-/////////////////////////////////////
 //
-//		WinAES
+//  Copyright (c) 2016 Yunzhu Li.
+//  contact@yunzhu.li
 //
-//		http://fatlyz.com
-//		contact@fatlyz.com
-//		(C) 2014 FatLYZ.COM
+//  You can redistribute it and/or modify it under the terms 
+//  of the GNU General Public License version 3 as published
+//  by the Free Software Foundation.
 //
-/////////////////////////////////////
+//  This file is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty 
+//  of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See
+//  the GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public
+//  License along with this file.
+//  If not, see http://www.gnu.org/licenses/.
+//
 
 // TabARS256Dlg.cpp : implementation file
 //
@@ -137,7 +145,7 @@ BOOL CTabAES256Dlg::OnInitDialog()
 
 		//Get Length
 		if(this->_GetFileLen(_curFilePath, &_curFileLen)){
-			_stprintf_s(_curFileLenStr, 128, _T("%d KB"), (_curFileLen / 1024));
+			_stprintf_s(_curFileLenStr, 128, _T("%lld KB"), (_curFileLen / 1024));
 		}else{
 			_stprintf_s(_curFileLenStr, 128, _T("Open Failed"));
 		}
@@ -415,7 +423,7 @@ void CTabAES256Dlg::OnBnClickedBtnAdd()
 					_tcscpy_s(_inFilePath[this->_iFileIndex], 512, _curFilePath);
 
 					if(this->_GetFileLen(_curFilePath, &_curFileLen)){
-						_stprintf_s(_curFileLenStr, 128, _T("%d KB"), (_curFileLen / 1024));
+						_stprintf_s(_curFileLenStr, 128, _T("%lld KB"), (_curFileLen / 1024));
 					}else{
 						_stprintf_s(_curFileLenStr, 128, _T("Open Failed"));
 					}
@@ -434,7 +442,7 @@ void CTabAES256Dlg::OnBnClickedBtnAdd()
 			_tcscpy_s(_inFilePath[0], 512, _pathDir);
 
 			if(this->_GetFileLen(_inFilePath[0], &_curFileLen)){
-				_stprintf_s(_curFileLenStr, 128, _T("%d KB"), (_curFileLen / 1024));
+				_stprintf_s(_curFileLenStr, 128, _T("%lld KB"), (_curFileLen / 1024));
 			}else{
 				_stprintf_s(_curFileLenStr, 128, _T("Open Failed"));
 			}
@@ -596,8 +604,4 @@ void CTabAES256Dlg::_SetItemStatusInList(int _iIndex, TCHAR *_lpszStatus)
 	_curItem.pszText = _lpszStatus;
 	this->_ctl_lst_files.SetItem(&_curItem);
 	this->_ctl_lst_files.EnsureVisible(_iIndex, FALSE);
-
 }
-
-
-

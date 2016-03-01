@@ -1,14 +1,4 @@
 
-/////////////////////////////////////
-//
-//		WinAES
-//
-//		http://fatlyz.com
-//		contact@fatlyz.com
-//		(C) 2014 FatLYZ.COM
-//
-/////////////////////////////////////
-
 #include "_Keccak512.h"
 
 typedef enum { SUCCESS = 0, FAIL = 1, BAD_HASHLEN = 2 } HashReturn;

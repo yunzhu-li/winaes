@@ -1,13 +1,21 @@
 
-/////////////////////////////////////
 //
-//		WinAES
+//  Copyright (c) 2016 Yunzhu Li.
+//  contact@yunzhu.li
 //
-//		http://fatlyz.com
-//		contact@fatlyz.com
-//		(C) 2014 FatLYZ.COM
+//  You can redistribute it and/or modify it under the terms 
+//  of the GNU General Public License version 3 as published
+//  by the Free Software Foundation.
 //
-/////////////////////////////////////
+//  This file is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty 
+//  of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See
+//  the GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public
+//  License along with this file.
+//  If not, see http://www.gnu.org/licenses/.
+//
 
 //***************************************************************
 //***************************************************************
@@ -33,7 +41,4 @@ extern void StringMD5(char * _lpszStr, unsigned long *_hash);
 //_callback--CallBack Function -- precents of current operation, with a custom parameter pointer (void *_callbackParam)
 extern BOOL FileMD5(TCHAR * _filepath, unsigned long *_hash, void(* _callback)(unsigned int _percent, void *_param), void *_callbackParam);
 
-
-
 #endif //__FATFILEMD5_H_
-

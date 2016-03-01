@@ -27,8 +27,8 @@ LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 0,0,2,3
- PRODUCTVERSION 0,0,2,3
+ FILEVERSION 0,2,4,0
+ PRODUCTVERSION 0,2,4,0
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -44,14 +44,14 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "Comments", "WinAES Executable"
-            VALUE "CompanyName", "FatLYZ.COM"
+            VALUE "CompanyName", "Yunzhu Li"
             VALUE "FileDescription", "WinAES"
-            VALUE "FileVersion", "0.0.2.3"
+            VALUE "FileVersion", "0.2.4.0"
             VALUE "InternalName", "WinAES"
-            VALUE "LegalCopyright", "(C) 2014  FatLYZ.COM"
+            VALUE "LegalCopyright", "(C) 2016 Yunzhu Li"
             VALUE "OriginalFilename", "WinAES.exe"
             VALUE "ProductName", "WinAES"
-            VALUE "ProductVersion", "0.0.2.3"
+            VALUE "ProductVersion", "0.2.4.0"
         END
     END
     BLOCK "VarFileInfo"
@@ -111,47 +111,40 @@ END
 
 /////////////////////////////////////////////////////////////////////////////
 //
-// Icon
-//
-
-// Icon with lowest ID value placed first to ensure application icon
-// remains consistent on all systems.
-IDR_MAINFRAME           ICON                    "res\\Log Off.ico"
-
-/////////////////////////////////////////////////////////////////////////////
-//
 // Dialog
 //
 
 IDD_WinAES_DIALOG DIALOGEX 0, 0, 503, 289
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
 EXSTYLE WS_EX_WINDOWEDGE | WS_EX_APPWINDOW
-CAPTION "WinAES x64 Ver: 0.2.3"
+CAPTION "WinAES 0.2.4 x64"
 FONT 8, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
     CONTROL         "",_TAB_MAIN,"SysTabControl32",0x0,10,10,484,256
-    PUSHBUTTON      "E&xit",IDCANCEL,444,268,50,16
-    LTEXT           "WinAES Ver: 0.2.3 (64-bit)",IDC_STATIC,13,271,248,11
+    PUSHBUTTON      "E&xit",IDCANCEL,443,268,50,16
+    LTEXT           "WinAES 0.2.4 x64",IDC_STATIC,13,272,248,11
 END
 
 IDD_TAB_ABOUT DIALOGEX 0, 0, 476, 240
 STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    CONTROL         "WinAES",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,57,27,104,10
-    CONTROL         "Version: 0.2.3 (64-bit, build 20141108), (C) 2014 FatLYZ.COM. All rights reserved.",IDC_STATIC,
-                    "Static",SS_LEFTNOWORDWRAP | WS_GROUP,58,38,378,10
-    LTEXT           "WinAES is provided as freeware. You are granted the right to use and to make an unlimited number of copies of these software.",IDC_STATIC,58,68,321,17
-    LTEXT           "AES(Advanced Encryption Standard), one of the most secure block ciphers in the world.",IDC_STATIC,58,160,307,9
-    CONTROL         "Any suggestions, feedback and comments are welcome. ",IDC_STATIC,
-                    "Static",SS_LEFTNOWORDWRAP | WS_GROUP,58,117,188,10
-    LTEXT           "The AES functions in this software are based in part on the descriptions in FIPS-197 document.",IDC_STATIC,58,170,353,9
-    LTEXT           "The Camellia functions in this software are based in part on the descriptions in RFC 3713 document.",IDC_STATIC,58,180,353,9
-    CONTROL         "Email: contact@fatlyz.com",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,58,127,188,10
-    CONTROL         "URL: http://fatlyz.com",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,58,137,188,10
-    LTEXT           "These software are provided ""as-is"".No warranty of any kind is expressed or implied.",IDC_STATIC,58,85,321,12
-    LTEXT           "The author will not be liable for data loss, damages, loss of profits or any other kind of loss while using or misusing this software.",IDC_STATIC,58,94,321,17
+    CONTROL         "WinAES",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,23,23,104,10
+    CONTROL         "Version: 0.2.4 (64-bit, 20160229), (C) 2016 Yunzhu Li.",IDC_STATIC,
+                    "Static",SS_LEFTNOWORDWRAP | WS_GROUP,23,49,260,10
+    CONTROL         "Any suggestions, feedbacks and comments are welcome. ",IDC_STATIC,
+                    "Static",SS_LEFTNOWORDWRAP | WS_GROUP,23,91,188,10
+    CONTROL         "Email: contact@yunzhu.li",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,23,101,188,10
     CONTROL         "Add to windows context menu",_CHK_CMENU,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,224,188,9
+    CONTROL         "This software is licensed unter the GPLv3 (GNU GENERAL PUBLIC LICENSE Version 3).",IDC_STATIC,
+                    "Static",SS_LEFTNOWORDWRAP | WS_GROUP,23,117,345,10
+    CONTROL         "You can view the license at http://www.gnu.org/licenses/",IDC_STATIC,
+                    "Static",SS_LEFTNOWORDWRAP | WS_GROUP,23,128,345,10
+    CONTROL         "WinAES is a light-weight and reliable security tool supports multiple cryptography",IDC_STATIC,
+                    "Static",SS_LEFTNOWORDWRAP | WS_GROUP,23,65,282,10
+    CONTROL         "algorithms and information security tools.",IDC_STATIC,
+                    "Static",SS_LEFTNOWORDWRAP | WS_GROUP,23,75,282,10
+    CONTROL         "https://winaes.com",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,23,34,188,10
 END
 
 IDD_TAB_AES256 DIALOGEX 0, 0, 476, 240
@@ -166,7 +159,7 @@ BEGIN
     EDITTEXT        _EDT_PASS,182,216,164,12,ES_AUTOHSCROLL
     PUSHBUTTON      "&Encrypt",_BTN_START,368,204,53,23
     PUSHBUTTON      "&Stop",_BTN_STOP,423,204,33,23
-    LTEXT           "Drag files here or click ""Add Files..""",IDC_STATIC,11,5,132,9
+    LTEXT           "Drop files here or click ""Add Files..""",IDC_STATIC,11,5,132,9
     RTEXT           "Password:",IDC_STATIC,135,218,42,9
     GROUPBOX        "Options",IDC_STATIC,12,192,341,42
     RTEXT           "Cipher:",IDC_STATIC,130,204,47,9
@@ -196,7 +189,7 @@ BEGIN
     CONTROL         "SHA-2 (SHA256)",_CHK_SHA256,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,44,65,8
     CONTROL         "SHA-2 (SHA512)",_CHK_SHA512,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,89,22,82,8
     CONTROL         "SHA-3",_CHK_KECCAK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,89,33,86,8
-    LTEXT           "Drag a file into this window or click ""Open...""",IDC_STATIC,179,20,86,17
+    LTEXT           "Drop a file in this window or click ""Open...""",IDC_STATIC,179,20,86,17
 END
 
 IDD_TAB_TOOLS DIALOGEX 0, 0, 476, 240
@@ -214,7 +207,7 @@ BEGIN
     CONTROL         "Symbols",_CHK_SYM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,75,56,10
     GROUPBOX        "Secure File Eraser (USE CAREFULLY!)",IDC_STATIC,248,5,219,227
     CONTROL         "",_LST_FILES,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,257,26,202,157
-    LTEXT           "Drag files here or click ""+""",IDC_STATIC,257,15,132,9
+    LTEXT           "Drop files here or click ""+""",IDC_STATIC,257,15,132,9
     PUSHBUTTON      "E&rase",_BTN_START_SE,372,205,53,19
     PUSHBUTTON      "&Stop",_BTN_STOP_SE,427,205,32,19
     CONTROL         "Erase 1 time",_RAD_ETIMES_1,"Button",BS_AUTORADIOBUTTON,263,189,64,10
@@ -252,7 +245,7 @@ BEGIN
     IDD_TAB_ABOUT, DIALOG
     BEGIN
         LEFTMARGIN, 7
-        RIGHTMARGIN, 469
+        RIGHTMARGIN, 468
         TOPMARGIN, 7
         BOTTOMMARGIN, 233
     END
@@ -283,6 +276,15 @@ BEGIN
 END
 #endif    // APSTUDIO_INVOKED
 
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDC_MAINFRAME           ICON                    "res\\icon.ico"
 #endif    // English (U.S.) resources
 /////////////////////////////////////////////////////////////////////////////
 

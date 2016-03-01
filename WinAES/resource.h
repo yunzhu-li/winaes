@@ -9,6 +9,8 @@
 #define IDR_MAINFRAME                   131
 #define IDD_TAB_HASH                    133
 #define IDD_TAB_TOOLS                   134
+#define IDI_ICON1                       137
+#define IDI_ICON2                       142
 #define _TAB_MAIN                       1000
 #define _LST_FILES                      1003
 #define _EDT_PASS                       1005
@@ -67,7 +69,7 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        136
+#define _APS_NEXT_RESOURCE_VALUE        144
 #define _APS_NEXT_COMMAND_VALUE         32771
 #define _APS_NEXT_CONTROL_VALUE         1040
 #define _APS_NEXT_SYMED_VALUE           101

@@ -1,14 +1,4 @@
 
-/////////////////////////////////////
-//
-//		WinAES
-//
-//		http://fatlyz.com
-//		contact@fatlyz.com
-//		(C) 2014 FatLYZ.COM
-//
-/////////////////////////////////////
-
 #ifndef _CAMELLIA_H
 #define _CAMELLIA_H
 

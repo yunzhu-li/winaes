@@ -1,13 +1,21 @@
 
-/////////////////////////////////////
 //
-//		WinAES
+//  Copyright (c) 2016 Yunzhu Li.
+//  contact@yunzhu.li
 //
-//		http://fatlyz.com
-//		contact@fatlyz.com
-//		(C) 2014 FatLYZ.COM
+//  You can redistribute it and/or modify it under the terms 
+//  of the GNU General Public License version 3 as published
+//  by the Free Software Foundation.
 //
-/////////////////////////////////////
+//  This file is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty 
+//  of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See
+//  the GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public
+//  License along with this file.
+//  If not, see http://www.gnu.org/licenses/.
+//
 
 // WinAESDlg.cpp : implementation file
 //
@@ -61,7 +69,7 @@ BOOL CWinAESDlg::OnInitDialog()
 	_lpTabItem->mask = TCIF_TEXT;
 	_lpTabItem->pszText = _T("AES256/Camellia256");
 	this->_ctl_tab_main.InsertItem(0, _lpTabItem);
-	_lpTabItem->pszText = _T("Hash(MD5/SHA-1/SHA512..)");
+	_lpTabItem->pszText = _T("Hash(MD5/SHA-1/2/3..)");
 	this->_ctl_tab_main.InsertItem(1, _lpTabItem);
 	_lpTabItem->pszText = _T("Security Tools");
 	this->_ctl_tab_main.InsertItem(2, _lpTabItem);
@@ -208,13 +216,9 @@ void CWinAESDlg::OnDropFiles(HDROP hDropInfo)
 	}else
 	if(this->_m_lastTabIndex == 3)
 	{
-		this->MessageBox(_T("Thank you for using my program! Please visit http://fatlyz.com"), _T("Hi~"), MB_ICONINFORMATION);
+		this->MessageBox(_T("Thank you for using my program! Please visit https://yunzhu.li"), _T("Hi~"), MB_ICONINFORMATION);
 	}
 
 	free(_curFileLenStr);
 	free(_curFilePath);
-
 }
-
-
-

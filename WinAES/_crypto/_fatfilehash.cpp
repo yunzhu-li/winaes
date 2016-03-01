@@ -1,14 +1,21 @@
 
-/////////////////////////////////////
 //
-//		WinAES
+//  Copyright (c) 2016 Yunzhu Li.
+//  contact@yunzhu.li
 //
-//		http://fatlyz.com
-//		contact@fatlyz.com
-//		(C) 2014 FatLYZ.COM
+//  You can redistribute it and/or modify it under the terms 
+//  of the GNU General Public License version 3 as published
+//  by the Free Software Foundation.
 //
-/////////////////////////////////////
-
+//  This file is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty 
+//  of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See
+//  the GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public
+//  License along with this file.
+//  If not, see http://www.gnu.org/licenses/.
+//
 
 //***************************************************************
 //***************************************************************
@@ -17,12 +24,7 @@
 //***************************************************************
 //***************************************************************
 
-
 #include "_fatfilehash.h"
-
-
-
-
 
 BOOL FileSHA1(TCHAR *_filepath, unsigned char *_hash, void(* _callback)(unsigned int _percent, void *_param), void *_callbackParam)
 {
@@ -242,11 +244,3 @@ BOOL FileKeccak512(TCHAR *_filepath, unsigned char *_hash, void(* _callback)(uns
 	free(_buf);
 	return 1;
 }
-
-
-
-
-
-
-
-

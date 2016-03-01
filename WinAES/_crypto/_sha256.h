@@ -1,14 +1,4 @@
 
-/////////////////////////////////////
-//
-//		WinAES
-//
-//		http://fatlyz.com
-//		contact@fatlyz.com
-//		(C) 2014 FatLYZ.COM
-//
-/////////////////////////////////////
-
 #ifndef _SHA256_H_
 #define _SHA256_H_
 

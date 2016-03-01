@@ -450,15 +450,11 @@
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
 			<File
-				RelativePath=".\res\Log Off.ico"
+				RelativePath=".\res\icon.ico"
 				>
 			</File>
 			<File
 				RelativePath=".\WinAES.rc"
-				>
-			</File>
-			<File
-				RelativePath=".\res\WinAES.rc2"
 				>
 			</File>
 		</Filter>

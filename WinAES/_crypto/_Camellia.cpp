@@ -1,14 +1,4 @@
 
-/////////////////////////////////////
-//
-//		WinAES
-//
-//		http://fatlyz.com
-//		contact@fatlyz.com
-//		(C) 2014 FatLYZ.COM
-//
-/////////////////////////////////////
-
 #include "_Camellia.h"
 
 const BYTE SIGMA[48] = {
